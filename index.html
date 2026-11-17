@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Group B | Environmental & Occupancy Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div><span class="eyebrow">SMART BUILDING · GROUP B · WEEK 06</span><h1>Environmental & Occupancy Dashboard</h1><p>SHT31 · BH1750 · PIR · Radar OUT · Radar UART</p></div><div class="device">ENV_GROUP_B_01</div></header>
+<section class="toolbar"><label for="key">Dashboard access code</label><input id="key" type="password" autocomplete="off" spellcheck="false" placeholder="Provided privately by instructor"><button id="connect">Connect / Refresh</button><button id="disconnect" class="secondary" disabled>Disconnect</button><span id="status" role="status">Not connected</span></section>
+<section class="meta"><span id="updated">Last sample: —</span><span id="freshness">Freshness: Unknown</span><span id="history">History: —</span><span id="error" role="alert"></span></section>
+<h2 class="section-title">Latest readings</h2><main id="cards" class="grid"></main>
+<section class="charts"><div class="section-head"><h2>Recent trends</h2><p>Up to 60 samples, ordered by recorded time · refresh every 30 seconds</p></div><div id="chart-grid" class="chart-grid"></div></section>
+<footer>Read-only dashboard · No credentials are stored in browser storage · Times shown in local browser time</footer>
+<script src="app.js"></script></body></html>
